@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PS-Awards-2024-Semifinals/static/css/main.b779b36f.css",
+    "main.js": "/PS-Awards-2024-Semifinals/static/js/main.17003872.js",
+    "static/js/453.7c458a2c.chunk.js": "/PS-Awards-2024-Semifinals/static/js/453.7c458a2c.chunk.js",
+    "index.html": "/PS-Awards-2024-Semifinals/index.html",
+    "main.b779b36f.css.map": "/PS-Awards-2024-Semifinals/static/css/main.b779b36f.css.map",
+    "main.17003872.js.map": "/PS-Awards-2024-Semifinals/static/js/main.17003872.js.map",
+    "453.7c458a2c.chunk.js.map": "/PS-Awards-2024-Semifinals/static/js/453.7c458a2c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b779b36f.css",
+    "static/js/main.17003872.js"
+  ]
+}
