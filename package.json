@@ -2,7 +2,7 @@
   "name": "ps-awards-2024",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://crc3clj.github.io/PS-Awards-2024-Semifinals",
+  "homepage": "https://crc3clj.github.io/PS-Awards-2024-Finals",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
