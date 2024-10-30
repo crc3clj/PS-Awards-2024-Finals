@@ -32,13 +32,13 @@ const projects = {
 
 const defineProjects ={
 
-    'Project #1': 'TEF',
-    'Project #2': 'MOE2',
+    'Project #1': 'Department #1',
+    'Project #2': 'Department #2',
 };
 
 const defineProjectLeader = {
-    'Project #1': 'Batan Alexandru',
-    'Project #2': 'Boda Mihai-Adrian',
+    'Project #1': 'Project Leader #1',
+    'Project #2': 'Project Leader #2',
 };
 
 const initialNotes = {
