@@ -17,125 +17,98 @@ const departments = [
 ];
 
 const projects = {
-  pm:  ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  pc:  ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  mse: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  tef: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  qmm: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  qmml: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  ctg: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  hrl: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  log: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  fcm: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings'],
-  qmmc: ['1. MOE3 Milling Pool - PCB edge delamination', '2. Person injured by falling down', '3. Prevention of Retractable Clamp Detachment', '4. SKD16 VC1CP019 pushed-out bushings']
-
+  pm:  ['Project #1', 'Project #2'],
+  pc:  ['Project #1', 'Project #2'],
+  mse: ['Project #1', 'Project #2'],
+  tef: ['Project #1', 'Project #2'],
+  qmm: ['Project #1', 'Project #2'],
+  qmml: ['Project #1', 'Project #2'],
+  ctg: ['Project #1', 'Project #2'],
+  hrl: ['Project #1', 'Project #2'],
+  log: ['Project #1', 'Project #2'],
+  fcm: ['Project #1', 'Project #2'],
+  qmmc: ['Project #1', 'Project #2']
 };
 
 const defineProjects ={
 
-    '1. MOE3 Milling Pool - PCB edge delamination': 'TEF',
-    '2. Person injured by falling down': 'MOE2',
-    '3. Prevention of Retractable Clamp Detachment': 'MOE1',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'MOE2',
+    'Project #1': 'TEF',
+    'Project #2': 'MOE2',
 };
 
 const defineProjectLeader = {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Batan Alexandru',
-    '2. Person injured by falling down': 'Boda Mihai-Adrian',
-    '3. Prevention of Retractable Clamp Detachment': 'Megyesi Lorand',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Pieper Steffen',
+    'Project #1': 'Batan Alexandru',
+    'Project #2': 'Boda Mihai-Adrian',
 };
 
 const initialNotes = {
   pm: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination PM',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down PM',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment PM',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings PM',
+    'Project #1': 'Notes Project #1 PM',
+    'Project #2': 'Notes Project #2 PM',
   },
 
   pc: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination PC',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down PC',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment PC',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings PC',
+    'Project #1': 'Notes Project #1 PC',
+    'Project #2': 'Notes Project #2 PC',
   },
 
   mse: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination MSE',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down MSE',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment MSE',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings MSE',
+    'Project #1': 'Notes Project #1 MSE',
+    'Project #2': 'Notes Project #2 MSE',
   },
 
   tef: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination TEF',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down TEF',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment TEF',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings TEF',
+    'Project #1': 'Notes Project #1 TEF',
+    'Project #2': 'Notes Project #2 TEF',
   },
 
   qmm: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination QMM',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down QMM',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment QMM',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings QMM',
+    'Project #1': 'Notes Project #1 QMM',
+    'Project #2': 'Notes Project #2 QMM',
   },
 
   qmml: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination QMM-L',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down QMM-L',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment QMM-L',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings QMM-L',
+    'Project #1': 'Notes Project #1 QMM-L',
+    'Project #2': 'Notes Project #2 QMM-L',
   },
 
   ctg: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination CTG',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down CTG',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment CTG',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings CTG',
+    'Project #1': 'Notes Project #1 CTG',
+    'Project #2': 'Notes Project #2 CTG',
   },
 
   hrl: {
-    '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination HRL',
-    '2. Person injured by falling down': 'Notes 2. Person injured by falling down HRL',
-    '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment HRL',
-    '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings HRL',
+    'Project #1': 'Notes Project #1 HRL',
+    'Project #2': 'Notes Project #2 HRL',
   },
 
     log: {
-      '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination LOG',
-      '2. Person injured by falling down': 'Notes 2. Person injured by falling down LOG',
-      '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment LOG',
-      '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings LOG',
+      'Project #1': 'Notes Project #1 LOG',
+      'Project #2': 'Notes Project #2 LOG',
     },
   
     fcm: {
-      '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination FCM',
-      '2. Person injured by falling down': 'Notes 2. Person injured by falling down FCM',
-      '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment FCM',
-      '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings FCM',
+      'Project #1': 'Notes Project #1 FCM',
+      'Project #2': 'Notes Project #2 FCM',
     },
     qmmc: {
-      '1. MOE3 Milling Pool - PCB edge delamination': 'Notes 1. MOE3 Milling Pool - PCB edge delamination FCM',
-      '2. Person injured by falling down': 'Notes 2. Person injured by falling down FCM',
-      '3. Prevention of Retractable Clamp Detachment': 'Notes 3. Prevention of Retractable Clamp Detachment FCM',
-      '4. SKD16 VC1CP019 pushed-out bushings': 'Notes 4. SKD16 VC1CP019 pushed-out bushings FCM',
+      'Project #1': 'Notes Project #1 FCM',
+      'Project #2': 'Notes Project #2 FCM',
     },
   };
 
 const departmentCriteria = {
-  'pm': ["D5 and D6", "KPI Improvement"],
-  'pc': ["D5 and D6", "KPI Improvement"],
-  'mse': ["D5 and D6", "KPI Improvement"],
-  'tef': ["D5 and D6", "KPI Improvement"],
-  'qmm': ["D5 and D6", "KPI Improvement"],
-  'qmml': ["D5 and D6", "KPI Improvement"],
-  'ctg': ["D5 and D6", "KPI Improvement"],
-  'hrl': ["D5 and D6", "KPI Improvement"],
-  'log': ["D5 and D6", "KPI Improvement"],
-  'fcm': ["D5 and D6", "KPI Improvement"],
-  'qmmc': ["D5 and D6", "KPI Improvement"],
+  'pm': ["D7 and D8", "Cost reduction/Saving"],
+  'pc': ["D7 and D8", "Cost reduction/Saving"],
+  'mse': ["D7 and D8", "Cost reduction/Saving"],
+  'tef': ["D7 and D8", "Cost reduction/Saving"],
+  'qmm': ["D7 and D8", "Cost reduction/Saving"],
+  'qmml': ["D7 and D8", "Cost reduction/Saving"],
+  'ctg': ["D7 and D8", "Cost reduction/Saving"],
+  'hrl': ["D7 and D8", "Cost reduction/Saving"],
+  'log': ["D7 and D8", "Cost reduction/Saving"],
+  'fcm': ["D7 and D8", "Cost reduction/Saving"],
+  'qmmc': ["D7 and D8", "Cost reduction/Saving"],
 };
 
 function App() {
@@ -247,8 +220,8 @@ function App() {
       const projectNotes = notes[selectedDepartment]?.[projects[selectedDepartment][projectNumber - 1]] || '';
   
       return {
-        "D5 and D6": psMethodAverage,
-        "KPI Improvement": kpiImprovementAverage,
+        "D7 and D8": psMethodAverage,
+        "Cost reduction/Saving": kpiImprovementAverage,
         Notes: projectNotes,
       };
     };
@@ -257,14 +230,14 @@ function App() {
       return `https://api.sheetbest.com/sheets/${sheetId}/tabs/Project ${projectNumber}/${rowToUpdate}`;
     }
     
-    const sheetId = "73dd3db3-a6cf-4f14-b772-0081f4f07507";
+    const sheetId = "3138e7a7-104e-42d2-95d3-21c7e13f8d27";
     
     const departmentIndex = departments.findIndex(dept => dept.id === selectedDepartment);
     const rowToUpdate = departmentIndex !== -1 ? departmentIndex : 0;
   
     const promises = [];
   
-    for (let i = 0; i <=3; i++) {
+    for (let i = 0; i <=1; i++) {
       const currentProjectName = projects[selectedDepartment][i];
       const currentProjectRatings = projectRatings[currentProjectName];
 
@@ -288,10 +261,8 @@ function App() {
             // Resetați și rating-urile pentru toate proiectele
 
             setProjectRatings({
-                '1. MOE3 Milling Pool - PCB edge delamination': resetRatings(),
-                '2. Person injured by falling down': resetRatings(),
-                '3. Prevention of Retractable Clamp Detachment': resetRatings(),
-                '4. SKD36 VC1CP019 pushed-out bushings': resetRatings(),
+                'Project #1': resetRatings(),
+                'Project #2': resetRatings(),
             });
             resetAppData();
         })
@@ -341,8 +312,8 @@ const renderRatings = (project, category, maxRating) => {
 };
 
 const criteriaToSubcategories = useMemo(() => ({
-  "D5 and D6": ['category1', 'category2', 'category3'],
-  "KPI Improvement": ['kpi-improvement-category1', 'kpi-improvement-category2'],
+  "D7 and D8": ['category1', 'category2', 'category3'],
+  "Cost reduction/Saving": ['kpi-improvement-category1', 'kpi-improvement-category2'],
   }), []); // array-ul gol indică faptul că useMemo nu are dependențe și, astfel, valoarea va fi memorată și nu se va schimba între randări
 
 const [formIsValid, setFormIsValid] = useState(false);
@@ -387,7 +358,7 @@ useEffect(() => {
         <div className="progress">{progress}%</div>
       </div>
     )}
-      <h1>PS Awards Digital Booklet 2024 - Seminals</h1>
+      <h1>PS Awards Digital Booklet 2024 - Finals</h1>
       <form className="dropdown" onSubmit={handleSubmit} >
       <div className='dropdown-container'>
       <div>
@@ -446,38 +417,38 @@ useEffect(() => {
           <br />
         
           </div>
-          {selectedDepartment && departmentCriteria[selectedDepartment].includes("D5 and D6") && (
+          {selectedDepartment && departmentCriteria[selectedDepartment].includes("D7 and D8") && (
           <div className="form-row score-section">
             <div>
               <label className="ps-awards-text">
-              D5 and D6
+              D7 and D8
               </label>
             </div>
             <label className="text-left">
-              1. Are measures defined for all identified root causes? (rate 0 to 5) 
+              1. Has the final meeting taken place? (rate 0 to 5) 
             </label>
             {renderRatings(selectedProject, 'category1', 5)}
             <label className="text-left">
-              2. Has the effectiveness of the actions been proven? (rate 0 to 5) 
+              2. Have preventive actions been implemented to solve the problem sustainably? (rate 0 to 5) 
             </label>
             {renderRatings(selectedProject, 'category2', 5) }
             <label className="text-left">
-              3. Are the risks associated with corrective measures identified? (rate 0 to 5) 
+              3. Have the measures been documented in a lessons learned and distributed through Feber, Docupedia, and the LL-CN meeting? (rate 0 to 5) 
             </label>
             {renderRatings(selectedProject, 'category3', 5)}
           </div>)}
 
-          {selectedDepartment && departmentCriteria[selectedDepartment].includes("KPI Improvement") && (
+          {selectedDepartment && departmentCriteria[selectedDepartment].includes("Cost reduction/Saving") && (
           <div className="form-row score-section">
             <div>
-              <label className="ps-awards-text">KPI Improvement</label>
+              <label className="ps-awards-text">Cost reduction/Saving</label>
             </div>
             <label className="text-left">
-              1. Concrete and coherent data regarding the improvement of performance indicators 
+              1. Benefit evaluation of measures converted in money 
             </label>
             {renderRatings(selectedProject, 'kpi-improvement-category1', 5)}
             <label className="text-left">
-              2. Proof of the sustainability of measures and implementation of measures with long-term effects 
+              2. Cost/benefit impact  
             </label>
             {renderRatings(selectedProject, 'kpi-improvement-category2', 5)}
           </div>)}
